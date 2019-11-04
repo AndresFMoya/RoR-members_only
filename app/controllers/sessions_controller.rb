@@ -10,4 +10,7 @@ class SessionsController < ApplicationController
       log_in(user)
     end
   end
+
+  def delete
+  end
 end
