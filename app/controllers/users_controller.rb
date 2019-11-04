@@ -3,6 +3,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    render user
+    @user = User.find(params[:id])
   end
 end
