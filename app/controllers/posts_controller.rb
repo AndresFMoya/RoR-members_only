@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   include sessions_helper
-  include posts_helper
   before_action :logged_in_user, only: [:new, :create]
 
   def new
@@ -18,5 +17,9 @@ class PostsController < ApplicationController
   def index
   end
 
+  private
 
+  def post_params
+    params.require(:post).permit(:content)
+  end
 end
