@@ -1,5 +1,10 @@
 class CreatePosts < ActiveRecord::Migration[6.0]
   def change
-    add_column :posts, :content, :string
+    create_table :posts do |t|
+      t.text :content
+      t.integer :user_id
+
+      t.timestamps
+    end
   end
 end
