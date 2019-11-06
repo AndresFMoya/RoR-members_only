@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
-  include sessions_helper
-  include posts_helper
+  include SessionsHelper
+  include PostsHelper
   before_action :logged_in_user, only: [:new, :create]
 
   def new
-    @post = Post.new
+    @post = current_user.posts.new
   end
 
   def create
