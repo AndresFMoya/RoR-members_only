@@ -12,8 +12,9 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.build(post_params)
     return unless @post.save
-      flash[:success] = 'Post created!'
-      redirect_to posts_path
+
+    flash[:success] = 'Post created!'
+    redirect_to posts_path
   end
 
   def index
