@@ -25,28 +25,27 @@ def current_user
   end
 end
 
+def forget(user)
+  user.forget
+  cookies.delete(:user_id)
+  cookies.delete(:remember_token)
+end
 
-  def forget(user)
-    user.forget
-    cookies.delete(:user_id)
-    cookies.delete(:remember_token)
-  end
+def logged_in?
+  !current_user.nil?
+end
 
-  def logged_in?
-    !current_user.nil?
-  end
+def log_out
+  session.delete(:user_id)
+  @current_user = nil
+end
 
-  def log_out
-    session.delete(:user_id)
-    @current_user = nil
+def logged_in_user
+  unless logged_in?
+    #store_location
+    flash[:danger] = "Please log in."
+    redirect_to login_url
   end
-
-  def logged_in_user
-    unless logged_in?
-      #store_location
-      flash[:danger] = "Please log in."
-      redirect_to login_url
-    end
-  end
+end
   
 end

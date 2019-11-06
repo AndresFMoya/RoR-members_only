@@ -11,11 +11,12 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
     if @post.save
       flash[:success] = "Post created!"
-      redirect_to 'index'
+      redirect_to "post/index"
     end
   end
 
   def index
+    @user = current_user
     @posts = Post.all
   end
 
