@@ -1,4 +1,6 @@
-require "digest"
+# frozen_string_literal: true
+
+require 'digest'
 
 class User < ApplicationRecord
   attr_accessor :remember_token
@@ -6,12 +8,12 @@ class User < ApplicationRecord
   has_many :posts
 
   # Returns the hash digest of the given string.
-  def User.digest(string)
+  def self.digest(string)
     Digest::SHA1.hexdigest(string)
   end
 
   # Returns a random token.
-  def User.new_token
+  def self.new_token
     SecureRandom.urlsafe_base64
   end
 
