@@ -2,7 +2,6 @@
 
 class PostsController < ApplicationController
   include SessionsHelper
-  include PostsHelper
   before_action :logged_in_user, only: %i[new create]
 
   def new
