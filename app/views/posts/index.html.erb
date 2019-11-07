@@ -1,7 +1,7 @@
 <h1>Posts</h1>
 <div class="col-md-8">
-  <% if !@user.nil? %>
-    <p><%= @user.name %></p>
+  <% if logged_in? %>
+    <p><%= @user.name %> is currently logged in</p>
   <% end %>
   <ol class="posts">
     <%= render @posts %>

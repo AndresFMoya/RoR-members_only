@@ -1,5 +1,5 @@
 <li id="post-<%= post.id %>">
-  <% if !@user.nil? %>
+  <% if logged_in? %>
     <span class="user"><%= post.user.name %></span>
   <% end %>
   <span class="content"><%= post.content %></span>
