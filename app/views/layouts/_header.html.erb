@@ -2,7 +2,7 @@
   <div class="container">
     <nav>
       <ul>
-        <% if logged_in? %>
+        <% if !@user.nil? %>
           <li><%= link_to "Log Out", logout_path, method: 'delete' %></li>
         <% else %>          
           <li><%= link_to "Log in", login_path %></li>
