@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+<div class="col-md-8">
+  <% if logged_in? %>
+    <p><%= @user.name %> is currently logged in</p>
+  <% end %>
+  <ol class="posts">
+    <%= render @posts %>
+  </ol>
+</div>

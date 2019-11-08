@@ -1,0 +1,9 @@
+<li id="post-<%= post.id %>">
+  <% if logged_in? %>
+    <span class="user"><%= post.user.name %> ~~ </span>
+  <% end %>
+  <span class="content"><%= post.content %> ~~ </span>
+  <span class="timestamp">
+    Posted: <%= time_ago_in_words(post.created_at) %> ago.
+  </span>
+</li>
