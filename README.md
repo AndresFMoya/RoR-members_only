@@ -1,4 +1,7 @@
-# Members Only
+<p>
+  <h1 align="center">Members Only - Ruby on Rails</h1>
+</p><br>
+
 This project consist of build an exclusive clubhouse (Rails app) where where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
 In this project, we will build a Web App with the following technologies:
@@ -68,9 +71,15 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](https://github.com/AndresFMoya/RoR-members-only/blob/develop/LICENSE) licensed.
 
-## Contact
-- **Andrés Moya** - [@andresfmoya](https://github.com/andresfmoya) I will love to hear about you at one of the following places! :heart:
+## 📞 Get in Touch!
+I will love to hear about you at one of the following places! :heart:
 
 - [LinkedIn](https://www.linkedin.com/in/andres-f-moya/)
 - [Twitter](https://www.twitter.com/andmedev/) 
 - <andresfmoya@gmail.com>.
+
+<p align="center">
+  <strong>
+    <a href="https://andresmoya.me">andresmoya.me</a>
+</strong>
+</p>
