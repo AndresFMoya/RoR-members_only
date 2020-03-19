@@ -1,3 +1,4 @@
+
 <p>
   <h1 align="center">Members Only - Ruby on Rails</h1>
 </p><br>
@@ -70,6 +71,7 @@ Give a ⭐️ if you like this project!
 ## License
 
 This project is [MIT](https://github.com/AndresFMoya/RoR-members-only/blob/develop/LICENSE) licensed.
+
 
 ## 📞 Get in Touch!
 I will love to hear about you at one of the following places! :heart:
